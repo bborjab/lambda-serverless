@@ -120,6 +120,10 @@ Resources:
                   - s3:*
                   - iam:PassRole
                   - cloudformation:DescribeStacks
+                  - cloudformation:CreateChangeSet
+                  - cloudformation:DeleteChangeSet
+                  - cloudformation:DescribeChangeSet
+                  - cloudformation:ExecuteChangeSet
                 Resource: "*"
 
   LambdaPolicyEC2:
